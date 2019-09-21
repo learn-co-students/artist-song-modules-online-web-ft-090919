@@ -10,6 +10,7 @@ class Song
     @@songs << self
   end
 
+  # class method to find instance by name
   def self.find_by_name(name)
     @@songs.detect{|a| a.name == name}
   end
